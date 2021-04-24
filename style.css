@@ -8,12 +8,15 @@ body{
     background: rgb(59, 179, 79);
     background-size: cover;
     color: #fff;
-    text-align:center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 #title{
     font-family: monospace;
     background-color: rgb(247, 111, 88);
-   
+    text-transform: uppercase;
 }
 #submit{
     border: 2px solid #080808;
