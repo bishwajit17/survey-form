@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <main>
+      <h1 id="title" style="color: green">
+        EverGreen English School <br />Admission Form
+      </h1>
+      <p id="description">
+        Better choice for future education<br /><b
+          ><em><u>&#8220;Come To Learn Go To Serve&#8221;</u></em></b
+        >
+      </p>
+      <br />
+      <form id="survey-form">
+        <div>
+          <label for="name" id="name-label">Full Name:</label>
+          <input
+            type="text"
+            name="fullname"
+            placeholder="Full Name"
+            id="name"
+            required
+          />
+        </div>
+        <label for="email" id="email-label">Email:</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <div>
+          <label id="name-label">Father Name:</label>
+          <input
+            id="name"
+            type="text"
+            name="fathername"
+            placeholder="Father Name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="number" id="number-label">Age (optional)</label>
+          <input
+            type="number"
+            id="number"
+            name="age"
+            min="10"
+            max="100"
+            placeholder="Age"
+          />
+        </div>
+        <div>
+          <label>Gender:</label>
+          <input type="radio" name="gender" value="male" />Male
+          <input type="radio" name="gender" value="female" />Female
+        </div>
+        <label>Please select your hobbies?</label><br />
+        <input type="checkbox" value="reading" name="" id="" />reading
+        <input type="checkbox" value="outdoor game" name="" id="" />outdoor game
+        <input type="checkbox" value="indoor game" name="" id="" />indoor game
+        <br />
+        <br />
+        <label for="number"> Contact Number:</label><br />
+        <select>
+          <option>+91</option>
+          <option>+977</option>
+        </select>
+        <input
+          id="number"
+          type="phone"
+          name="contact number"
+          placeholder="Contact Number"
+          min="10"
+          max="100"
+          required
+        />
+        <br />
+        <div class="form-group">
+          <p>
+            <label for="dropdown"
+              >Which option best describes your current role?</label
+            >
+          </p>
+          <select name="role" id="dropdown" class="form-control">
+            <option value="student">Student</option>
+            <option value="fulltime-job">Full Time Job</option>
+            <option value="fulltime-learner">Full Time Learner</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <p><u>Description:</u></p>
+        <textarea name="" id="" cols="20" rows="10"></textarea><br />
+
+        <input type="submit" value="submit" id="submit" />
+      </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
